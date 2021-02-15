@@ -1,0 +1,54 @@
+.slider{
+    background-color: $dark-blue;
+    padding: 3.625rem;
+    border: none;
+    margin-bottom: 7.8125rem;
+
+
+    &__card{
+        width: 70%;
+        margin: 0 auto;
+        color: $sand-color;
+        height: 300px;
+        overflow-y: hidden;
+    }
+
+    &__primary{
+        order: 1;
+        width: 45%;
+    }
+
+    &__secondary{
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 5px;
+        // background-color: red;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 1.875rem;
+    }
+
+    &__price{
+        letter-spacing:8px;
+    }
+
+    &__btn_group{
+        width: 60%;
+        margin: 2.5rem auto 0;
+
+        button{
+            height: 1px;
+            width: 2.375rem;
+
+            &:not(:last-child){
+                margin-right: 3rem;
+            }
+        }
+    }
+}

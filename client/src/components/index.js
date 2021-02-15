@@ -1,0 +1,9 @@
+export { default as Header } from "./header/Header";
+export { default as Slider } from "./slider/Slider";
+export { default as ProductCard } from "./product-card/ProductCard";
+export { default as Footer } from "./footer/Footer";
+export { default as Banner } from "./product-banner/ProductBanner";
+export { default as Rating } from "./rating/ProductRating";
+export { default as ProductOption } from "./product-option/ProductOption";
+export { default as Review } from "./review/Review";
+export { default as ReviewCard } from "./review-card/ReviewCard";

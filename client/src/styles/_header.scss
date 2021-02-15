@@ -1,0 +1,32 @@
+.header{
+    background-color: $very-dark-blue;
+    width: 100%;
+    height: 100%;
+    color: $sand-color;
+    margin-bottom: 4.0625rem;
+
+    a{
+        color: $sand-color;
+    }
+
+    &__logo{
+        font-size: $font-large;
+        font-weight: 700;
+    }
+
+    &__input{
+        height: 2.5rem;
+        width: 20.25rem;
+        padding-left: .625rem;
+        border: none;
+    }
+
+    &__search{
+        font-size: 1rem;
+        border: none;
+    }
+
+    &__nav_item{
+        padding: .625rem 1.25rem;
+    }
+}
