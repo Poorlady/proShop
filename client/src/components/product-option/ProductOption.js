@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductOption = ({ stock }) => {
+const ProductOption = ({ qty, handleChange, stock, handleSubmit }) => {
   return (
     <div className="detail__option">
       <div className="detail__option_group flex">
@@ -14,17 +14,24 @@ const ProductOption = ({ stock }) => {
       </div>
       <div className="detail__option_group flex">
         <label htmlFor="stock">Stock:</label>
-        <input
-          className="detail__amount"
-          name="amount"
-          type="number"
-          defaultValue="1"
-          min="1"
-          max={stock}
-        />
+        <select value={qty} onChange={handleChange}>
+          {[...Array(stock).keys()].map((item) => {
+            return (
+              <option value={item + 1} key={item + 1}>
+                {item + 1}
+              </option>
+            );
+          })}
+        </select>
       </div>
       <div className="detail__option_group flex">
-        <button className="button">Add Cart</button>
+        <button
+          onClick={handleSubmit}
+          className="button"
+          disabled={stock > 0 ? false : true}
+        >
+          {stock > 0 ? "Add to cart" : "Out of stock"}
+        </button>
       </div>
     </div>
   );

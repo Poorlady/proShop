@@ -7,3 +7,5 @@ export { default as Rating } from "./rating/ProductRating";
 export { default as ProductOption } from "./product-option/ProductOption";
 export { default as Review } from "./review/Review";
 export { default as ReviewCard } from "./review-card/ReviewCard";
+export { default as Message } from "./message/Message";
+export { default as Loader } from "./loader/Loader";

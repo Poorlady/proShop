@@ -1,0 +1,26 @@
+.message{
+    min-height: 61vh;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.spinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    div{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border: 8px solid transparent;
+        border-radius: 50%;
+        border-top-color: $dark-blue;
+        animation: spinner1 1.2s linear infinite;
+    }
+
+}
