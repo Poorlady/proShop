@@ -15,7 +15,6 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
             if (item.product === addedItem.product) {
               return {
                 ...addedItem,
-                qty: item.qty + addedItem.qty,
               };
             }
             return item;
